@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Resume AI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>🎯 Resume AI System</h1>
+    <p>Your complete job search toolkit.</p>
+    
+    <div class="features">
+        <div class="feature-card">
+            <h2>📄 Resume Analyzer</h2>
+            <p>Upload your resume and get AI-powered feedback.</p>
+            <a href="/resume" class="btn">Analyze Resume</a>
+        </div>
+        
+        <div class="feature-card">
+            <h2>🔍 Job RAG Query</h2>
+            <p>Ask questions about jobs and careers.</p>
+            <a href="/job-rag" class="btn">Ask Questions</a>
+        </div>
+        
+        <div class="feature-card">
+            <h2>📝 Resume Builder</h2>
+            <p>Create a professional resume in minutes.</p>
+            <a href="/resume-builder" class="btn">Build Resume</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

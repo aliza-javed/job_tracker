@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Job RAG Query{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>🔍 Job RAG Query</h1>
+    <p>Ask questions about jobs, careers, and interviews.</p>
+    
+    <form id="ragForm">
+        <div class="form-group">
+            <label for="queryInput">Your Question</label>
+            <textarea id="queryInput" rows="4" placeholder="e.g., How do I prepare for a Python developer interview?"></textarea>
+        </div>
+        
+        <button type="submit" id="submitBtn" class="btn btn-primary">
+            Ask Question
+        </button>
+    </form>
+    
+    <div id="ragResults" class="results"></div>
+</div>
+{% endblock %}

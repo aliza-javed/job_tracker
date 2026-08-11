@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Resume Analyzer{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>📄 Resume Analyzer</h1>
+    <p>Get AI-powered feedback on your resume structure and content.</p>
+    
+    <form id="resumeForm" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="resumeFile">Upload Resume</label>
+            <input type="file" id="resumeFile" name="file" accept=".txt,.md,.docx,.pdf">
+            <p id="fileName" class="file-name">No file selected</p>
+            <small>Supports: .txt, .md, .docx, .pdf (max 10MB)</small>
+        </div>
+        
+        <button type="submit" id="submitBtn" class="btn btn-primary">
+            Upload & Analyze
+        </button>
+    </form>
+    
+    <div id="results" class="results"></div>
+</div>
+{% endblock %}
